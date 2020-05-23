@@ -75,11 +75,15 @@ def serve():
     return server
 
 
-def get_db():
-      db = pymysql.connect(host=host, user=username, passwd=password,
-                           db=db_name, charset='utf8mb4')
-      return db
+# def get_db():
+#      db = pymysql.connect(host=host, user=username, passwd=password,
+#                           db=db_name, charset='utf8mb4')
+#      return db
 
+def get_db():
+     db = pymysql.connect(host="localhost", user="root", passwd="",
+                          db="covid", charset='utf8mb4')
+     return db
 
 
 
@@ -133,6 +137,7 @@ def signup():
             govtID = request.form.get("govtID")
             address = request.form.get("address")
             service = request.form.getlist("serve")
+            print(service)
 
             services = ''
             for s in service:
@@ -1103,9 +1108,6 @@ def applied_vols(id):
 @app.route('/whatsapp/<id>',methods=['GET','POST'])
 def whatsapp(id):
     id = id
-    if not session.get('logged_in'):
-        return redirect(url_for('login'))
-
     db = get_db()
     c = db.cursor()
     c.execute('select task_name,vol_name,vol_phone,task_id from application where id = %s and grp_email = %s',(id, session['username']))
