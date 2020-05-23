@@ -133,6 +133,7 @@ def signup():
             govtID = request.form.get("govtID")
             address = request.form.get("address")
             service = request.form.getlist("serve")
+            print(service)
 
             services = ''
             for s in service:
@@ -157,12 +158,12 @@ def signup():
 
                 c.execute('select phone from members where phone = %s'
                           , phone)
-                phone = c.fetchone()
+                p = c.fetchone()
 
                 if account:
                     flash('Email already exists please try again with another email!')
                     return render_template('register.html')
-                elif phone:
+                elif p:
                     flash('The phone number already exists please try again with another phone number.')
                     return render_template('register.html')
                 else:
