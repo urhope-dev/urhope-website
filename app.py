@@ -1103,6 +1103,9 @@ def applied_vols(id):
 @app.route('/whatsapp/<id>',methods=['GET','POST'])
 def whatsapp(id):
     id = id
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+
     db = get_db()
     c = db.cursor()
     c.execute('select task_name,vol_name,vol_phone,task_id from application where id = %s and grp_email = %s',(id, session['username']))
