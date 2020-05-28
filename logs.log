@@ -1,0 +1,807 @@
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:30] "[37mGET /static/assets2/css/custom-css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:30] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:30] "[37mGET /static/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:30] "[37mGET /static/assets2/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:31] "[37mGET /static/assets/js/plugins/bootstrap-switch.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:31] "[37mGET /static/assets/js/plugins/nouislider.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:31] "[37mGET /static/assets/js/plugins/moment.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:31] "[37mGET /static/assets/js/plugins/datetimepicker.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:31] "[37mGET /static/assets/js/plugins/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/Logos/Logo2.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/BG.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/Volunteer.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/Find_volunteers.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/NPO.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/img/background.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:32] "[37mGET /static/assets2/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:36] "[37mGET /static/assets2/img/Logos/Logo4.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:44] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:55] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:00:55] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:06] "[37mGET /static/assets/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:07] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:07] "[37mGET /static/assets/img/theme/profile.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /task_list HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:15] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:16] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:16] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:33] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:01:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:14:18] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:05] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:34] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:34] "[37mGET /static/assets2/css/custom-css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:34] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:34] "[37mGET /static/assets2/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:34] "[37mGET /static/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets/js/plugins/bootstrap-switch.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets/js/plugins/nouislider.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets/js/plugins/moment.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets/js/plugins/datetimepicker.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets2/img/Logos/Logo2.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets/js/plugins/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets2/img/BG.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets2/img/Volunteer.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets2/img/Find_volunteers.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:35] "[37mGET /static/assets2/img/NPO.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:36] "[37mGET /static/assets2/img/background.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:36] "[37mGET /static/assets2/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:38] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:39] "[37mGET /static/assets2/img/Logos/Logo4.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:51] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:15:55] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:42] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:45] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[33mGET /static/assets2/img/tasks.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[33mGET /static/assets2/img/account.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[33mGET /static/assets/img/profile1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[33mGET /static/assets2/img/feedback.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:22:58] "[33mGET /static/assets2/img/logout.jpeg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:26:00] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:26:00] "[33mGET /static/assets/img/profile1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:26:00] "[33mGET /static/assets2/img/tasks.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:26:00] "[33mGET /static/assets2/img/account.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:26:00] "[33mGET /static/assets2/img/feedback.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:26:00] "[33mGET /static/assets2/img/logout.jpeg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:17] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:17] "[33mGET /static/assets/img/profile1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:17] "[37mGET /static/assets2/img/tasks.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:17] "[37mGET /static/assets2/img/account.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:17] "[33mGET /static/assets2/img/logout.jpeg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:17] "[37mGET /static/assets2/img/feedback.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:36] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:36] "[33mGET /static/assets/img/profile.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:28:36] "[33mGET /static/assets2/img/logout.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:30:45] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:30:46] "[33mGET /static/assets/img/profile.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:30:46] "[37mGET /static/assets2/img/logout.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:31:22] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:31:22] "[37mGET /static/assets/img/theme/profile.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[35m[1mGET /apply/1/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[37mGET /apply/1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[37mGET /apply/1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[37mGET /apply/1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[37mGET /apply/1/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[37mGET /apply/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:34:13] "[37mGET /apply/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\cred\\cred.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:36:35] "[32mGET /apply/1/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:36:35] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:36:45] "[37mPOST /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:36:56] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:36:56] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:37:30] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:37:58] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:57] "[32mGET /apply/1/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /task_list HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:39:58] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:40:08] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:40:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:40:29] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:42:21] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:52:31] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:53:12] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:53:12] "[33mGET /static/assets/img/profile2.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:54:08] "[32mGET /how_is_the_task/1/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:54:08] "[37mGET /notification_page/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:54:13] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 09:54:13] "[33mGET /static/assets/img/profile2.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:10] "[32mGET /home HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:10] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:19] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:04:20] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:05:48] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:07:19] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:09:05] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:11:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:11:10] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:11:20] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:11:20] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:11:21] "[35m[1mGET /static/assets/img/profile2.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:15:43] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:16:30] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:16:50] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:26:37] "[32mGET /home HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:26:37] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:27:21] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:27:41] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:29:00] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:29:12] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:29:12] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:24] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:42] "[35m[1mGET /1/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:42] "[37mGET /1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:42] "[37mGET /1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:42] "[37mGET /1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:43] "[37mGET /1/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:43] "[37mGET /1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:30:43] "[37mGET /1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:35:09] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:36:42] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:39:23] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:39:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:50:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:50:35] "[37mGET /static/assets/img/Logos/Logo1.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:52:53] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:52:53] "[37mGET /static/assets/js/plugins/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:52:54] "[32mGET /favicon.ico HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:52:54] "[37mGET /favicon.ico/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:55:57] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:57:53] "[32mGET /volunteer_all_tasks.html HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:57:54] "[37mGET /volunteer_all_tasks.html/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:57:54] "[35m[1mGET /volunteer_all_tasks.html/static/assets/img/Logos/Logo1.jpeg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:58:48] "[37mGET /volunteer_all_tasks.html/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:58:48] "[35m[1mGET /volunteer_all_tasks.html/static/assets/img/Logos/Logo1.jpeg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:59:21] "[37mGET /volunteer_all_tasks.html/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 10:59:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:07:54] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:11:00] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:11:34] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:12:23] "[32mGET /index.html HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:12:23] "[37mGET /index.html/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:12:23] "[35m[1mGET /index.html/static/assets/img/Logos/Logo1.jpeg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:13:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:13:09] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:13:09] "[35m[1mGET /1/static/assets/img/Logos/Logo1.jpeg HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:13:34] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /team HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/siddhant.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/farha.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/priya.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/zuhair.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/sharique.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/furqaan.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/siraj.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/pranav.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/saket.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/aashita.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/jino.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/neelam.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/vivek_g.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:17:03] "[37mGET /static/assets2/img/team/aparna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:19:32] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:20:45] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:29:08] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:29:47] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:30:29] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:30:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:30:38] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:27] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:30] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:40] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:40] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:23] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:39] "[35m[1mGET /create-task HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:40] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:35:46] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:36:07] "[32mGET /how_is_the_task/1/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:36:07] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:38:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:38:18] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:38:40] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:38:40] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:39:52] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:39:54] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:32] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:34] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:42:31] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:44:10] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:44:14] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:00] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:10] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:10] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[35m[1mGET /create-task HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:46:19] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:47:49] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:18] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:52:55] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:56:48] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:56:58] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:57:26] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:57:59] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:58:09] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:58:11] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:58:19] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:58:51] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:00:04] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:04:30] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:04:52] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:05:04] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:07:15] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:08:26] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:08:28] "[37mGET /edit/2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:08:28] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:08:32] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:10] "[32mGET /2/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:10] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:18] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:18] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:22] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:29] "[37mGET /edit/1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:30] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:10:30] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:11:44] "[37mGET /edit/1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:11:44] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:11:44] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:13:58] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:14:46] "[37mGET /edit/1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:14:46] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:14:47] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:15:57] "[37mGET /edit/1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:15:57] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:15:57] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:16:20] "[37mGET /edit/1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:16:20] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:16:20] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:16:57] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:17:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:17:03] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:17:24] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:17:24] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:17:33] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:17:58] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:18:04] "[37mGET /edit/2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:18:04] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:18:04] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:11] "[37mGET /edit/2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:11] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:11] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:50] "[37mGET /edit/2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:50] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:50] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:19:55] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:05] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:28] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:42] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:57] "[32mGET /edit-task/1 HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:57] "[35m[1mGET /edit-task/1/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:57] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:57] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:57] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:58] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:58] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:20:58] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:21:31] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:35:03] "[32mGET /create-task HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:35:03] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:35:16] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:35:16] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:35:20] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:35:46] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[35m[1mGET /edit-task/1/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:36:08] "[37mGET /edit-task/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:02:33] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:09:06] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:11:44] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:38] "[35m[1mPOST /create-task HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:38] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:38] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:38] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:12:39] "[37mGET /create-task?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:01] "[32mGET /create-task HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:01] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:17] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:17] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:19] "[32mGET /ngo_new_task.html HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:19] "[37mGET /ngo_new_task.html/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:26] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:27] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:28] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:34] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:14:35] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:15:03] "[37mPOST /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:15] "[32mPOST /create-task HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:15] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:26] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:26] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:36] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:55] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:18:55] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:19:16] "[32mGET /delete-task/2/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:19:16] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:19:24] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:20:01] "[37mPOST /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:20:07] "[37mPOST /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:21:28] "[37mPOST /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:05] "[37mPOST /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:13] "[32mGET /delete-task/1/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:13] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:23] "[32mGET /delete-task/6/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:23] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:33] "[32mGET /delete-task/3/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:33] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:41] "[32mGET /delete-task/4/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:22:41] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:26:22] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:29:02] "[32mGET /home HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:29:02] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:29:31] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:29:31] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:29:56] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:04] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:15] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:15] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:44] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:30:47] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:31:00] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:31:00] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:31:49] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:15] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:15] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:15] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:15] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:15] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:15] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:16] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:32:37] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:33:25] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:33:53] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:34:06] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:35:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:35:41] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:37:09] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:37:09] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:40:44] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:42:43] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:43:17] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:43:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:45:10] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:49:51] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:49:57] "[32mGET /delete-task/5/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:49:57] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:50:18] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:50:48] "[37mPOST /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:50:52] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:50:58] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:01] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:08] "[35m[1mGET /edit-task/7/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:08] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:08] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:08] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:08] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:11] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 13:51:11] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:08:59] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:09:00] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:09:00] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:10:53] "[32mGET /edit-task/7/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:10:53] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:11:07] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:11:07] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:11:12] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:11:16] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:11:16] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:11:16] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:12:37] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:12:37] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:12:37] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:14:53] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:14:54] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:14:54] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:15:16] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:15:16] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:15:16] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:15:47] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:15:47] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:15:48] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:16:20] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:16:20] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:16:20] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:17:04] "[32mPOST /edit-task/7/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:17:04] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:18:15] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:41] "[35m[1mGET /edit-task/7/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:41] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:41] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:41] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:42] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:42] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:19:42] "[37mGET /edit-task/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:20:40] "[32mGET /edit-task/7/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:20:40] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:21:05] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:21:05] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:21:49] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:22:02] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:22:02] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:22:02] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:26:07] "[37mGET /edit-task/7/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:26:07] "[35m[1mGET /edit-task/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:26:08] "[35m[1mGET /edit-task/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:26:14] "[32mPOST /edit-task/7/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:26:14] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:39:56] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:41:56] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:44:54] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:45:14] "[37mGET /create-task HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:45:20] "[37mGET /2/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:46:48] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:05] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:33] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:33] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[35m[1mGET /apply/7/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:47:55] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[35m[1mGET /apply/7/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:48:51] "[37mGET /apply/7/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:32] "[37mGET /1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:41] "[37mGET /edit/1/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:42] "[35m[1mGET /edit/static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:42] "[35m[1mGET /edit/static/assets2/img/background.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:57] "[32mPOST /update HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:57] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:52:57] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:54:26] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:54:26] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:56:14] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:57:09] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:58:39] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:59:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 14:59:54] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:00:14] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:00:14] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:09:06] "[32mGET /grievances.html HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:09:06] "[37mGET /grievances.html/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:09:11] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:12:18] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:13] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:14] "[37mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:14] "[37mGET /logout?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:14] "[37mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:14] "[37mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:14] "[37mGET /logout?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:14] "[37mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:34] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:43:41] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:03] "[32mPOST /check-admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:03] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:04] "[35m[1mGET /favicon.ico/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:37] "[37mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:39] "[35m[1mGET /favicon.ico/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:44:42] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:45:52] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:46:44] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:47:04] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:48:54] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:50:12] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:52:32] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:53:09] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:55:48] "[32mGET /home HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:55:48] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:55:58] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:56:21] "[32mPOST /check-admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:56:21] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Burair\\URHope\\urhope\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 635-307-003
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:20] "[32mGET /home HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:20] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:25] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:46] "[32mPOST /check-admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:46] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:46] "[37mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:46] "[37mGET /home?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:47] "[37mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:47] "[37mGET /home?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:47] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 15:57:47] "[37mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:08:02] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:11:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:12:32] "[32mGET /signup HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:12:32] "[37mGET /signup/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:13:48] "[32mGET /login HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:13:48] "[37mGET /login/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:15:46] "[37mGET /signup/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:17:38] "[37mGET /signup/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:18:43] "[37mGET /signup/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:20:37] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:22:07] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:22:33] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:26:18] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:27:27] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:28:48] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:29:38] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:29:52] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:30:15] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:31:04] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:31:19] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:32:23] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:33:25] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:34:21] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:35:03] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:37:01] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:14] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:19] "[35m[1mGET /1/ HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:19] "[37mGET /1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:19] "[37mGET /1/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:19] "[37mGET /1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:19] "[37mGET /1/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:19] "[37mGET /1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:38:20] "[37mGET /1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:40:11] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:40:17] "[32mGET /del_vol/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:40:17] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:47:31] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 16:51:12] "[37mGET /home HTTP/1.1[0m" 200 -

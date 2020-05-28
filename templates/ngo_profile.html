@@ -2,6 +2,24 @@
 
 {% block content %}
 
+<div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
+    <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
+        <div class="row align-items-center" align="center">
+            <div class="col">
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">My Profile</h1>
+            </div>
+            <div class="col justify-content-end d-none d-lg-block">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="/static/assets/img/theme/profile.png" class="profile-pic-dashboard" height="50">
+                    &nbsp;
+                    {{session['name']}} &nbsp; <br>
+                    <span class="badge badge-secondary" style="background-color:#252766">Relief Provider</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
 {% if (message.startswith("Logged")) %}
 <div class="alert alert-success alert-dismissible" role="alert">
@@ -18,18 +36,10 @@
 {% endif %}
 
 {% endfor %} {% endif %} {% endwith %}
-      
-<div class="container-fluid">
-    <div class="col page-title " style="padding-top: 100px; padding-bottom: 25px">
-        <div class="row align-items-center justify-content-center" align="center">
-            <h1 style="color: #000;" class="font-weight-bold">My Account</h1>
-        </div>
-    </div>
-</div>
 
-<div class="container mt-0">
+<div class="container mt-0 pl-lg-5">
     <div class="row justify-content-center">
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-2">
 
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
@@ -152,11 +162,11 @@
                             class="fa fa-pencil"
                             aria-hidden="true"></i></sup></a>
                     </h5>
-                    <h6 class="font-weight-light">NGO</h6>
+                    <span class="badge badge-secondary" style="background-color:#252766">Relief Provider</span>
                 </div>
                 <div style="text-align: center" class=" mb-2 ">
-                    <a href="{{ url_for('task_list') }}">
-                        <button class="btn btn-outline-primary">My Tasks</button>
+                    <a href="{{ url_for('home') }}">
+                        <button class="btn btn-outline-primary"><i class="ni ni-tv-2 text-primary"></i>  Dashboard</button>
                     </a>
                 </div>
                 <div style="text-align: center" class="

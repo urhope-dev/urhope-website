@@ -53,10 +53,24 @@
 
 </head>
 
+{% if account_page %}
+<body style="background-color: #f5f9fe" class="landing-page">
+{% else %}
 <body class="landing-page">
+{% endif %}
 
 <!-- Navbar -->
+{% if account_page %}
+{% if session['role']=='v' %}
+{% include "partials/partials_volunteer_sidebar.html" %}
+{% elif session['role']=='n' %}
+{% include "partials/partials_ngo_sidebar.html" %}
+{% else %}
+{% include "partials/partials_admin_sidebar.html" %}
+{% endif %}
+{% else %}
 {% include "partials/partial_navbar.html" %}
+{% endif %}
 
 <!-- Header -->
 {% include "partials/partial_page_title.html" %}
