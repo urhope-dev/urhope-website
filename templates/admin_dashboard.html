@@ -36,7 +36,8 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='{{ url_for('profile', id=session['user_id']) }}'" style="cursor: pointer">
+            <div class="options" onclick="location.href='{{ url_for('profile', id=session['user_id']) }}'"
+                style="cursor: pointer">
                 <div>
                     <img src="/static/assets2/img/account.jpg" class="options-img" />
                 </div>
@@ -133,10 +134,12 @@
                                 </td>
                                 {% if v.active == 1 %}
                                 <td class="align-middle">
-                                    <span class=" btn btn-outline-success" style="height: 30px; font-size: 12px;"> <b>Active</b> </span>
+                                    <span class=" btn btn-outline-success" style="height: 30px; font-size: 12px;">
+                                        <b>Active</b> </span>
                                 </td>
                                 {% else %}
-                                <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;"> <b>Inactive</b> </span>
+                                <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;">
+                                    <b>Inactive</b> </span>
                                 {% endif %}
                                 <td class="align-middle">
                                     <p class="m-0">{{v.pin}}</p>
@@ -237,47 +240,47 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <tr>
-                                                <td colspan="1">
-                                                    About
-                                                </td>
-                                                <td colspan="2">
-                                                    <div class="initiative-description">
-                                                        <p class="text-muted" align="left">{{v.about}}</p>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <td colspan="1" class="">
-                                                <p class="mt-1">Contact</p>
-                                            </td>
-                                            <td>
-                                                <div class="initiative-contact align-content-around">
-                                                    <a href="tel:{{v.phone}}">
-                                                        <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
-                                                        </button>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <td colspan="1">
-                                                <p class="mt-1">Action</p>
+                                                About
                                             </td>
-                                            <td colspan="3">
-                                                <div style="" class=" mb-2 ">
-                                                    <a href="{{ url_for('del_vol', id=v.member_id)}}">
-                                                        <button class="btn btn-danger mt-1"> Delete Volunteer</button>
-                                                    </a>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.about}}</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                    </table>
+                                        <td colspan="1" class="">
+                                            <p class="mt-1">Contact</p>
+                                        </td>
+                                        <td>
+                                            <div class="initiative-contact align-content-around">
+                                                <a href="tel:{{v.phone}}">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <p class="mt-1">Action</p>
+                                </td>
+                                <td colspan="3">
+                                    <div style="" class=" mb-2 ">
+                                        <a href="{{ url_for('del_vol', id=v.member_id)}}">
+                                            <button class="btn btn-danger mt-1"> Delete Volunteer</button>
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
-                            {% endfor %}
-                            {% endfor %}
-                            <!--========== ROW 1 ENDS =========-->
-                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                    <!--========== ROW 1 ENDS =========-->
+                    </tbody>
                     </table>
 
                 </div>
@@ -326,7 +329,8 @@
                                 </td>
                                 {% else %}
                                 <td class="align-middle">
-                                    <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;"> <b>Inactive</b> </span>
+                                    <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;">
+                                        <b>Inactive</b> </span>
                                 </td>
                                 {% endif %}
                                 <td class="align-middle">
@@ -448,47 +452,49 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <tr>
-                                                <td colspan="1">
-                                                    About
-                                                </td>
-                                                <td colspan="2">
-                                                    <div class="initiative-description">
-                                                        <p class="text-muted" align="left">{{v.about}}</p>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <td colspan="1" class="">
-                                                <p class="mt-1">Contact</p>
-                                            </td>
-                                            <td>
-                                                <div class="initiative-contact align-content-around">
-                                                    <a href="tel:{{v.phone}}">
-                                                        <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
-                                                        </button>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <td colspan="1">
-                                                <p class="mt-1">Action</p>
+                                                About
                                             </td>
-                                            <td colspan="3">
-                                                <div style="" class=" mb-2 ">
-                                                    <a href="{{ url_for('del_vol', id=v.member_id)}}">
-                                                        <button class="btn btn-danger mt-1" onclick="return confirm('Are you sure you want to delete this task?');"> Delete Volunteer</button>
-                                                    </a>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.about}}</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                    </table>
+                                        <td colspan="1" class="">
+                                            <p class="mt-1">Contact</p>
+                                        </td>
+                                        <td>
+                                            <div class="initiative-contact align-content-around">
+                                                <a href="tel:{{v.phone}}">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <p class="mt-1">Action</p>
+                                </td>
+                                <td colspan="3">
+                                    <div style="" class=" mb-2 ">
+                                        <a href="{{ url_for('del_vol', id=v.member_id)}}">
+                                            <button class="btn btn-danger mt-1"
+                                                onclick="return confirm('Are you sure you want to delete this task?');">
+                                                Delete Volunteer</button>
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
-                            {% endfor %}
-                            {% endfor %}
-                            <!--========== ROW 1 ENDS =========-->
-                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                    <!--========== ROW 1 ENDS =========-->
+                    </tbody>
                     </table>
 
                 </div>
@@ -678,11 +684,43 @@
             </div>
         </div>
 
+        <a id="up"></a>
+        <div class="mt-4 col-lg-12 col-12 px-lg-3 order-lg-1 order-2">
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Logs</h5>
+                    </div>
+                    <div class="col">
+                        <a href="#down" class="mb-2 btn btn-outline-primary"><i class="fa fa-arrow-down"></i> Go Down</a>
+                    </div>
+                    {% if logs|length>0 %}
+                    <div class="p-md-4 m-md-4" style="border-radius: 15px; color: #fff; background-color: #161741">
+                        {% for value in logs %}
+                        <p style="vertical-align: middle" colspan="1">
+                            {{ value }}
+                        </p>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="p-md-4 m-md-4" style="color: #fff; background-color: #161741">
+                        <div style="text-align: center; vertical-align: middle" colspan="1">
+                            <h5>Due to Some Error Logs are not Showing Up</h5>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="col text-center">
+                    <a href="#up" class="mt-4 btn btn-outline-primary"><i class="fa fa-arrow-up"></i> Go Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </div>
 <!-- Page Content Ends-->
-
+<a id="down"></a>
 
 <br /><br />
 

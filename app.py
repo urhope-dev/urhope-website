@@ -421,7 +421,8 @@ def home():
             regvols = reg_vols()
             regngos = reg_ngos()
             all = allTasks()
-            return render_template('admin_dashboard.html', account_page=account_page, all=all, regvols=regvols, regngos=regngos)
+            log = logs()
+            return render_template('admin_dashboard.html', account_page=account_page, all=all, regvols=regvols, regngos=regngos, logs=log)
 
 @app.route('/panel/')  # Admin Login
 def admin_panel():
@@ -544,17 +545,17 @@ def del_vol(id):
     return redirect(url_for('home'))
 
 
-@app.route('/logs')
-def logs():
-    if not session.get('logged_in'):
-        return redirect(url_for('login'))
+# @app.route('/logs')
+# def logs():
+#     if not session.get('logged_in'):
+#         return redirect(url_for('login'))
 
-    log_file = open('logs.log', 'r')
+#     log_file = open('logs.log', 'r')
 
-    if os.stat("logs.log").st_size == 0:
-        return render_template('log.html', logs=log_file, l=0)
-    else:
-        return render_template('log.html', logs=log_file, l=1)
+#     if os.stat("logs.log").st_size == 0:
+#         return redirect('home', logs=log_file, l=0)
+#     else:
+#         return redirect('home', logs=log_file, l=1)
 
 
 # @app.route('/download_data/<id>/', methods=["GET", "POST"])
@@ -1525,7 +1526,7 @@ def reg_vols():
                 "currProfile": d[11],
                 "address": d[12],
                 "social": d[13],
-                "serices": d[14],
+                "services": d[14],
                 "branch": d[15],
                 "about": d[16],
                 "govtid": d[17],
@@ -1562,7 +1563,7 @@ def reg_ngos():
                 "currProfile": d[11],
                 "address": d[12],
                 "social": d[13],
-                "serices": d[14],
+                "services": d[14],
                 "branch": d[15],
                 "about": d[16],
                 "govtid": d[17],
@@ -1571,6 +1572,11 @@ def reg_ngos():
     c.close()
     connect.close()
     return mydata
+
+def logs():
+    log_file = open('logs.log', 'r')
+    log_read = log_file.readlines()
+    return log_read
 
 
 
