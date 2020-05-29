@@ -138,15 +138,17 @@
                                         <b>Active</b> </span>
                                 </td>
                                 {% else %}
-                                <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;">
-                                    <b>Inactive</b> </span>
+                                <td class="align-middle">
+                                    <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;">
+                                        <b>Inactive</b> </span>
+                                </td>
                                 {% endif %}
                                 <td class="align-middle">
                                     <p class="m-0">{{v.pin}}</p>
                                 </td>
                                 <td class="align-middle">
                                     <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
-                                        data-target="#collapseexploretask1" aria-expanded="false"
+                                        data-target="#collapseexploretask{{ v.member_id }}" aria-expanded="false"
                                         aria-controls="collapseExample">
                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     </button>
@@ -157,7 +159,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4" class="sub-td">
-                                    <table class="collapse sub-table" id="collapseexploretask1">
+                                    <table class="collapse sub-table" id="collapseexploretask{{ v.member_id }}">
                                         <tr>
                                             <td colspan="1">
                                                 Member ID
@@ -338,7 +340,7 @@
                                 </td>
                                 <td class="align-middle">
                                     <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
-                                        data-target="#collapseexploretask1" aria-expanded="false"
+                                        data-target="#collapseexploretask{{ loop.index0 }}" aria-expanded="false"
                                         aria-controls="collapseExample">
                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     </button>
@@ -349,7 +351,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4" class="sub-td">
-                                    <table class="collapse sub-table" id="collapseexploretask1">
+                                    <table class="collapse sub-table" id="collapseexploretask{{ loop.index0 }}">
                                         <tr>
                                             <td colspan="1">
                                                 Member ID
@@ -545,7 +547,7 @@
                                 </td>
                                 <td class="align-middle">
                                     <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
-                                        data-target="#collapseexploretask1" aria-expanded="false"
+                                        data-target="#collapseexploretask{{ v.task_id }}" aria-expanded="false"
                                         aria-controls="collapseExample">
                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     </button>
@@ -556,7 +558,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4" class="sub-td">
-                                    <table class="collapse sub-table" id="collapseexploretask1">
+                                    <table class="collapse sub-table" id="collapseexploretask{{v.task_id}}">
                                         <tr>
                                             <td colspan="1">
                                                 Task ID
