@@ -237,7 +237,7 @@
                                             </td>
                                             <td colspan="2">
                                                 <div class="initiative-description">
-                                                    <p class="text-muted" align="left">{{v.serivces}}</p>
+                                                    <p class="text-muted" align="left">{{v.services}}</p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -271,8 +271,9 @@
                                 <td colspan="3">
                                     <div style="" class=" mb-2 ">
                                         <a href="{{ url_for('del_vol', id=v.member_id)}}">
-                                            <button class="btn btn-danger mt-1"> Delete Volunteer</button>
+                                            <button onclick="return confirm('Are you sure you want to delete this Volunteer?');" class="btn btn-danger mt-1"> Delete Volunteer</button>
                                         </a>
+<p style="margin-top:2px;color:red;">Please Inform Member before Deleting his/her Account</p>
                                     </div>
                                 </td>
                             </tr>
@@ -449,7 +450,7 @@
                                             </td>
                                             <td colspan="2">
                                                 <div class="initiative-description">
-                                                    <p class="text-muted" align="left">{{v.serivces}}</p>
+                                                    <p class="text-muted" align="left">{{v.services}}</p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -484,10 +485,11 @@
                                     <div style="" class=" mb-2 ">
                                         <a href="{{ url_for('del_vol', id=v.member_id)}}">
                                             <button class="btn btn-danger mt-1"
-                                                onclick="return confirm('Are you sure you want to delete this task?');">
-                                                Delete Volunteer</button>
+                                                onclick="return confirm('Are you sure you want to delete this Relief Provider?');">
+                                                Delete Relief Provider</button>
                                         </a>
-                                    </div>
+<p style="margin-top:2px;color:red;">Please Inform Member before Deleting his/her Account</p>
+</div>
                                 </td>
                             </tr>
                     </table>
@@ -661,15 +663,11 @@
                                             </td>
                                             <td colspan="3">
                                                 <div style="" class=" mb-2 ">
-                                                    {% if not v.task_id in done %}
-                                                    <a href="{{ url_for('apply_task', id=v.task_id)}}">
-                                                        <button class="btn btn-success mt-1">Apply</button>
+                                                    <a href="{{ url_for('delete_task', id=v.task_id)}}">
+                                                        <button class="btn btn-danger mt-1" onclick="return confirm('Are you sure you want to delete this task?');">Delete Task</button>
                                                     </a>
-                                                    {% else %}
-                                                    <a href="{{ url_for('apply_task', id=v.task_id)}}">
-                                                        <button class="btn btn-success mt-1" disabled>Applied</button>
+<p style="margin-top:33px;color:red;">Please Inform Task Creator before Deleting this Task</p>
                                                     </a>
-                                                    {% endif %}
                                                 </div>
                                             </td>
                                         </tr>
@@ -697,7 +695,7 @@
                         <a href="#down" class="mb-2 btn btn-outline-primary"><i class="fa fa-arrow-down"></i> Go Down</a>
                     </div>
                     {% if logs|length>0 %}
-                    <div class="p-md-4 m-md-4" style="border-radius: 15px; color: #fff; background-color: #161741">
+                    <div class="p-md-4 m-md-10" style="border-radius: 10px; color: #fff; background-color: #161741">
                         {% for value in logs %}
                         <p style="vertical-align: middle" colspan="1">
                             {{ value }}

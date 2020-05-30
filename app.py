@@ -1530,7 +1530,8 @@ def reg_vols():
                 "branch": d[15],
                 "about": d[16],
                 "govtid": d[17],
-                "active": d[18]
+                "active": d[18],
+                "created_on": timeago.format(d[19], date)
             })
     c.close()
     connect.close()
@@ -1567,7 +1568,8 @@ def reg_ngos():
                 "branch": d[15],
                 "about": d[16],
                 "govtid": d[17],
-                "active": d[18]
+                "active": d[18],
+                "created_on": timeago.format(d[19], date)
             })
     c.close()
     connect.close()

@@ -287,6 +287,9 @@
                                             </td>
                                             <td colspan="3">
                                                 <div style="" class=" mb-2 ">
+                                                    <a href="{{ url_for('applied_vols', id=v.task_id)}}">
+                                                        <button class="btn btn-success mt-1">Applied Volunteers</button>
+                                                    </a>
                                                     <a href="{{ url_for('edit_task', id=v.task_id)}}">
                                                         <button class="btn btn-success mt-1">Edit Task</button>
                                                     </a>
