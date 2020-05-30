@@ -1811,3 +1811,46 @@ INFO:werkzeug:127.0.0.1 - - [30/May/2020 18:05:29] "[37mGET /admin-mail/ HTTP/1
 INFO:werkzeug:127.0.0.1 - - [30/May/2020 18:05:33] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/May/2020 18:06:01] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/May/2020 18:06:27] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-088-586
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:03] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:03] "[37mGET /static/assets2/css/custom-css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:03] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:03] "[37mGET /static/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:03] "[37mGET /static/assets2/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets/js/plugins/bootstrap-switch.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets/js/plugins/nouislider.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets/js/plugins/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets/js/plugins/moment.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets/js/plugins/datetimepicker.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/Logos/Logo3.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/Logos/Logo2.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/BG.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/Volunteer.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/Find_volunteers.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/NPO.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:04] "[37mGET /static/assets2/img/background.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:06] "[37mGET /static/assets2/img/Logos/Logo4.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:07] "[37mGET /panel/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:17] "[32mPOST /check-admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /static/assets/img/Logos/Logo1.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /static/assets2/img/feedback.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /static/assets/img/theme/profile.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /static/assets2/img/account.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /static/assets2/img/tasks.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:18] "[37mGET /static/assets2/img/logout.jpeg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:35:25] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:36:22] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:37:02] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:43:29] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:46:29] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:51:35] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 22:54:01] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 23:05:29] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 23:05:32] "[37mGET /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 23:06:18] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/May/2020 23:19:14] "[37mPOST /admin-mail/ HTTP/1.1[0m" 200 -

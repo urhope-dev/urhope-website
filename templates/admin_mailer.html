@@ -90,7 +90,7 @@
                            aria-describedby="basic-addon1">
                 </div>
                 <div class="form-group mb-3">
- <textarea type="text" class="form-control" name="message" placeholder="Message" aria-label="Username" aria-describedby="basic-addon1" hidden></textarea>
+ <textarea type="text" class="message-body form-control" name="message" placeholder="Message" aria-label="Username" aria-describedby="basic-addon1" hidden></textarea>
                 </div>
 
                 <!-- Create the editor container -->
@@ -640,11 +640,13 @@
 
     $(window).keyup(function (evt) {
         var editor_content = quill.root.innerHTML;
+        $('.message-body').val(editor_content);
         $('.email-body-preview').html(editor_content);
     });
 
     function updatePreview() {
         var editor_content = quill.root.innerHTML;
+        $('.message-body').val(editor_content);
         $('.email-body-preview').html(editor_content);
     }
 </script>
