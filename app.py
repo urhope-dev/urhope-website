@@ -27,9 +27,10 @@ import random
 import smtplib
 import logging
 import re
-import timeago
-import webbrowser
-from device_detector import SoftwareDetector
+import timeago #new addition
+from email.mime.text import MIMEText #new addition
+from email.mime.multipart import MIMEMultipart # new Addtion
+import webbrowser # if not Used Please Remove
 
 app = Flask(__name__)
 
@@ -101,7 +102,7 @@ def signup():
             phone = request.form.get('phone')
             role = request.form.get('role')
             age = request.form.get('age')
-            currProfile = request.form.get("currProfile")
+            curr = request.form.get("currProfile")
             gender = request.form.get("gender")
             regno = request.form.get('regno')
             branch = request.form.get("branch")
@@ -171,15 +172,16 @@ def signup():
                             'Registered Successfully, Check your email for confirmation!')
 
                         server = serve()
-                        subject = "Notification from URHope Team"
-                        body = "Dear "+name+",\n\nYou have regisered successfully on our website.\n\nUsername: "+username+"\nPassword: "+password + \
-                            "\nClick here to login.\nhttp://urhope.in/login/\n\nThanks for choosing us. Have a nice day :)\n\nRegards\nURHope Team"
-                        msg = f"Subject: {subject}\n\n{body} "
+                        msg = MIMEMultipart('alternative')
+                        msg['Subject'] = "Notification from URHope Team"
+                        html= render_template('mail/register.html', name=name, username=username, password=password)
+                        body = MIMEText(html, 'html')
+                        msg.attach(body)
                         server.sendmail(
-                            'urhope.ngo@gmail.com',
-                            str(username),
-                            msg
-                        )
+                                        'urhope.ngo@gmail.com',
+                                        str(username),
+                                        msg.as_string()
+                                        )
 
                         server.quit()
 
@@ -998,6 +1000,10 @@ def apply_task(id):
     c.execute('SELECT * FROM task where id=%s', id)
     data = c.fetchall()
 
+    vol_req = data[0][7]
+    grp_name = data[0][3]
+    task_name = data[0][1]
+    task_id = data[0][0]
     if data[0][11] < data[0][7]:
         val = data[0][11]+1
         c.execute('UPDATE task SET vol_applied=%s WHERE id=%s', (val, id))
@@ -1007,26 +1013,27 @@ def apply_task(id):
         c.close()
         db.close()
 
-        subject = "Notification from URHope Team"
-        body = "Dear "+data[0][3]+",\n\n" + session['name'] + " has applied for the task " + data[0][1]+" which has an ID: "+str(data[0][0])+".\n\nSo far the total number of applicaion for this task is " + str(
-            val)+" and "+str(data[0][7]-val)+" more volunteers are required.\n\nClick on the link for more details,\nhttp://www.urhope.in\n\n\nRegards,\nURHope Team"
-        msg = f"Subject: {subject}\n\n{body} "
+        msg = MIMEMultipart('alternative')
+        msg['Subject'] = "Notification from URHope Team"
+        html= render_template('mail/task_apply.html', grp_name=grp_name, task_name=task_name,  task_id=task_id, val=val, vol_req=vol_req)
+        body = MIMEText(html, 'html')
+        msg.attach(body)
 
         server.sendmail(
-            'urhope.ngo@gmail.com',
-            str(data[0][12]),
-            msg
-        )
+						'urhope.ngo@gmail.com',
+						str(data[0][12]),
+						msg.as_string()
+						)
 
         if(val == data[0][7]):
-            body = "Dear "+data[0][3]+",\n\nFor the task "+data[0][1] + \
-                ", you have sufficient volunteers. Now you can proceed for further steps.\n\n\nRegards,\nURHope Team"
-            msg = f"Subject: {subject}\n\n{body} "
+            html= render_template('mail/task_sufficient.html', grp_name=grp_name, task_name=task_name,  task_id=task_id, val=val, vol_req=vol_req)
+            body = MIMEText(html, 'html')
+            msg.attach(body)
             server.sendmail(
-                'urhope.ngo@gmail.com',
-                str(data[0][12]),
-                msg
-            )
+							'urhope.ngo@gmail.com', 
+							str(data[0][12]), 
+							msg.as_string()
+							)
         server.quit()
         flash("Applied Successfully")
         return redirect(url_for('home'))
@@ -1057,21 +1064,23 @@ def back_application(id):
     task_name = data[0][1]
     task_id = data[0][0]
     vol_req = data[0][7]
+    grp_name = data[0][3]
 
     val = val - 1
     c.execute('UPDATE task SET vol_applied=%s WHERE id=%s', (val, id))
 
     server = serve()
-    subject = "Notification from URHope Team"
-    body = "Dear "+data[0][3]+",\n\n"+session['name'] + " has taken back application for the task "+task_name+" which has an ID: "+str(task_id)+".\n\nSo far the total number of applicaion for this task is " + str(
-        val)+" and "+str(vol_req-val)+" more volunteers are required.\n\nClick on the link for more details,\nhttp://www.urhope.in\n\n\nRegards,\nURHope Team"
-    msg = f"Subject: {subject}\n\n{body} "
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = "Notification from URHope Team"
+    html= render_template('mail/back_application.html', grp_name=grp_name, val=val, task_name=task_name, task_id=task_id, vol_req=vol_req)
+    body = MIMEText(html, 'html')
+    msg.attach(body)
 
     server.sendmail(
-        'urhope.ngo@gmail.com_address',
-        str(data[0][12]),
-        msg
-    )
+                    'urhope.ngo@gmail.com_address',
+                    str(data[0][12]),
+                    msg.as_string()
+                    )
 
     db.commit()
     c.close()
@@ -1580,6 +1589,37 @@ def logs():
     log_read = log_file.readlines()
     return log_read
 
+#mail Template Admin
+@app.route('/admin-mail/', methods=['GET','POST'])
+def mail_template():
+    if not 'logged_in' in session:
+        return redirect(url_for('logout'))
+    if session['role'] == 'a':
+        account_page=True
+        if request.method == 'POST':
+            if 'email' in request.form:
+                email = request.form.get('email')
+                subject = request.form.get('subject')
+                message = request.form.get('message')
+                server = serve()
+                msg = MIMEMultipart('alternative')
+                msg['Subject'] = subject
+                html= render_template('mail/admin_mail.html', message=message)
+                body = MIMEText(html, 'html')
+                msg.attach(body)
+                server.sendmail(
+                                        'urhope.ngo@gmail.com',
+                                        str(email),
+                                        msg.as_string()
+                                        )
+
+                server.quit()
+                flash('Email Sent!')
+                return render_template('admin_mailer.html', account_page=account_page)
+            else:
+                flash('Email Not Sent!')
+                return render_template('admin_mailer.html', account_page=account_page)
+        return render_template('admin_mailer.html', account_page=account_page)
 
 
 '''
