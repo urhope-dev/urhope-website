@@ -1,0 +1,742 @@
+{% extends "base_site1.html" %}
+
+{% block content %}
+<!---New Page Title--->
+<div class="container pl-lg-5 mt-4 mt-lg-0">
+    <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
+        <div class="row align-items-center" align="center">
+            <div class="col">
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Your Dashboard</h1>
+            </div>
+            <div class="col justify-content-end d-none d-lg-block">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="/static/assets/img/theme/profile.png" class="profile-pic-dashboard" height="50">
+                    &nbsp;
+                    {{session['name']}}&nbsp;<br>
+                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!---New Page Title Ends--->
+
+<!-- Page Content -->
+<div class="container mb-lg-3 mt-lg-4 pl-lg-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='{{ url_for('mail_template') }}';" style="cursor: pointer">
+                <div>
+                    <img src="/static/assets2/img/tasks.jpg" class="options-img" />
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-envelope"
+                        aria-hidden="true"></i><br>
+                    Mail
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='{{ url_for('profile', id=session['user_id']) }}'"
+                style="cursor: pointer">
+                <div>
+                    <img src="/static/assets2/img/account.jpg" class="options-img" />
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-user"
+                        aria-hidden="true"></i><br>
+                    My Profile
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='/#contact';" style="cursor: pointer">
+                <div>
+                    <img src="/static/assets2/img/feedback.jpg" class="options-img" />
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-paper-plane"
+                        aria-hidden="true"></i><br>
+                    Submit Feedback
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='{{ url_for('logout') }}'" style="cursor: pointer">
+                <div>
+                    <img src="/static/assets2/img/logout.jpeg" class="options-img" />
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-sign-out"
+                        aria-hidden="true"></i><br>
+                    Logout
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-1 pl-lg-5">
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    {% if (message.startswith("Thanks")) %}
+    <div class="alert alert-primary alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">×</span></button>
+        {{message}}
+    </div>
+    {% else %}
+    <div class="alert alert-primary alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">×</span></button>
+        {{message}}
+    </div>
+    {% endif %}
+
+    {% endfor %} {% endif %} {% endwith %}
+
+
+</div>
+
+<div class="container mt-3 pl-lg-5">
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Registered Volunteers</h5>
+                    </div>
+
+                    <table class="table step3-table filter-this-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <h6>Name</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Active/Inactive</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Pincode</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>More</h6>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for k,data in regvols.items() %}
+                            {% for v in data %}
+                            <!--========== ROW 1 STARTS =========-->
+
+                            <tr aria-rowspan="2" class="card-row">
+                                <td class="align-middle">
+                                    <div class="initiative-heading">
+                                        <h6 class="font-weight-bold mb-0">{{v.name}}</h6>
+                                    </div>
+                                </td>
+                                {% if v.active == 1 %}
+                                <td class="align-middle">
+                                    <span class=" btn btn-outline-success" style="height: 30px; font-size: 12px;">
+                                        <b>Active</b> </span>
+                                </td>
+                                {% else %}
+                                <td class="align-middle">
+                                    <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;">
+                                        <b>Inactive</b> </span>
+                                </td>
+                                {% endif %}
+                                <td class="align-middle">
+                                    <p class="m-0">{{v.pin}}</p>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
+                                        data-target="#collapseexploretask{{ v.member_id }}" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                                <td class="align-middle" hidden>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="sub-td">
+                                    <table class="collapse sub-table" id="collapseexploretask{{ v.member_id }}">
+                                        <tr>
+                                            <td colspan="1">
+                                                Member ID
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.member_id}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Account Created
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.created_on}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Email
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.username}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Password
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.password}}
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Age
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.age}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Gender
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.sex}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Current Profile
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.currProfile}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Services
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.services}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                About
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.about}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <td colspan="1" class="">
+                                            <p class="mt-1">Contact</p>
+                                        </td>
+                                        <td>
+                                            <div class="initiative-contact align-content-around">
+                                                <a href="tel:{{v.phone}}">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <p class="mt-1">Action</p>
+                                </td>
+                                <td colspan="3">
+                                    <div style="" class=" mb-2 ">
+                                        <a href="{{ url_for('del_vol', id=v.member_id)}}">
+                                            <button onclick="return confirm('Are you sure you want to delete this Volunteer?');" class="btn btn-danger mt-1"> Delete Volunteer</button>
+                                        </a>
+<p style="margin-top:2px;color:red;">Please Inform Member before Deleting his/her Account</p>
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                    </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                    <!--========== ROW 1 ENDS =========-->
+                    </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Registered Relief Provider</h5>
+                    </div>
+
+                    <table class="table step3-table filter-this-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <h6>Name</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Active/Inactive</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Pincode</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>More</h6>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for k,data in regngos.items() %}
+                            {% for v in data %}
+                            <!--========== ROW 1 STARTS =========-->
+
+                            <tr aria-rowspan="2" class="card-row">
+                                <td class="align-middle">
+                                    <div class="initiative-heading">
+                                        <h6 class="font-weight-bold mb-0">{{v.name}}</h6>
+                                    </div>
+                                </td>
+                                {% if v.active == 1 %}
+                                <td class="align-middle">
+                                    <span class=" btn btn-outline-success"> <b>Active</b> </span>
+                                </td>
+                                {% else %}
+                                <td class="align-middle">
+                                    <span class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;">
+                                        <b>Inactive</b> </span>
+                                </td>
+                                {% endif %}
+                                <td class="align-middle">
+                                    <p class="m-0">{{v.pin}}</p>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
+                                        data-target="#collapseexploretask{{ loop.index0 }}" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                                <td class="align-middle" hidden>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="sub-td">
+                                    <table class="collapse sub-table" id="collapseexploretask{{ loop.index0 }}">
+                                        <tr>
+                                            <td colspan="1">
+                                                Member ID
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.member_id}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Account Created
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.created_on}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Email
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.username}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Password
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.password}}
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Registration Number
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.regno}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Govt. ID
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.govtid}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Branch
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.branch}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Website
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.website}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Social
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.social}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Services
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.services}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                About
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.about}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <td colspan="1" class="">
+                                            <p class="mt-1">Contact</p>
+                                        </td>
+                                        <td>
+                                            <div class="initiative-contact align-content-around">
+                                                <a href="tel:{{v.phone}}">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <p class="mt-1">Action</p>
+                                </td>
+                                <td colspan="3">
+                                    <div style="" class=" mb-2 ">
+                                        <a href="{{ url_for('del_vol', id=v.member_id)}}">
+                                            <button class="btn btn-danger mt-1"
+                                                onclick="return confirm('Are you sure you want to delete this Relief Provider?');">
+                                                Delete Relief Provider</button>
+                                        </a>
+<p style="margin-top:2px;color:red;">Please Inform Member before Deleting his/her Account</p>
+</div>
+                                </td>
+                            </tr>
+                    </table>
+                    </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                    <!--========== ROW 1 ENDS =========-->
+                    </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 col-lg-12 col-12 px-lg-3 order-lg-1 order-2">
+
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Explore Tasks</h5>
+                    </div>
+
+                    <table class="table step3-table filter-this-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <h6>Task</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Task Type</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Pincode</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Apply</h6>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for k,data in all.items() %}
+                            {% for v in data %}
+                            <!--========== ROW 1 STARTS =========-->
+
+                            <tr aria-rowspan="2" class="card-row">
+                                <td class="align-middle">
+                                    <div class="initiative-heading">
+                                        <h6 class="font-weight-bold mb-0">{{v.task}}</h6>
+                                    </div>
+                                </td>
+                                <td class="align-middle">
+                                    <p class="m-0">{{v.t_type}}</p>
+                                </td>
+                                <td class="align-middle">
+                                    <p class="m-0">{{v.location}}</p>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
+                                        data-target="#collapseexploretask{{ v.task_id }}" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                                <td class="align-middle" hidden>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="sub-td">
+                                    <table class="collapse sub-table" id="collapseexploretask{{v.task_id}}">
+                                        <tr>
+                                            <td colspan="1">
+                                                Task ID
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.task_id}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Task Details
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.task_det}}
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Posted
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.posted}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Task Creator
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.grp}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Volunteers required
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.vol_num}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Volunteers applied
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.vol_applied}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" class="">
+                                                <p class="mt-1">Contact</p>
+                                            </td>
+                                            <td>
+                                                <div class="initiative-contact align-content-around">
+                                                    <a href="tel:{{v.phone}}">
+                                                        <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Website
+                                            </td>
+                                            {% if "http" in v.website %}
+
+                                            <td colspan="3">
+                                                <a href="{{v.website}}">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">{{v.website}}
+                                                    </button>
+                                                </a>
+                                            </td>
+                                            {% else %}
+                                            <td colspan="3">
+                                                <a href="http://{{v.website}}">
+                                                    <button
+                                                        class="btn btn-sm btn-outline-primary mt-1">http://{{v.website}}
+                                                    </button>
+                                                </a>
+                                            </td>
+                                            {% endif %}
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                <p class="mt-1">Action</p>
+                                            </td>
+                                            <td colspan="3">
+                                                <div style="" class=" mb-2 ">
+                                                    <a href="{{ url_for('delete_task', id=v.task_id)}}">
+                                                        <button class="btn btn-danger mt-1" onclick="return confirm('Are you sure you want to delete this task?');">Delete Task</button>
+                                                    </a>
+<p style="margin-top:33px;color:red;">Please Inform Task Creator before Deleting this Task</p>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            {% endfor %}
+                            <!--========== ROW 1 ENDS =========-->
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <a id="up"></a>
+        <div class="mt-4 col-lg-12 col-12 px-lg-3 order-lg-1 order-2">
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Logs</h5>
+                    </div>
+                    <div class="col">
+                        <a href="#down" class="mb-2 btn btn-outline-primary"><i class="fa fa-arrow-down"></i> Go Down</a>
+                    </div>
+                    {% if logs|length>0 %}
+                    <div class="p-md-4 m-md-10" style="border-radius: 10px; color: #fff; background-color: #161741">
+                        {% for value in logs %}
+                        <p style="vertical-align: middle" colspan="1">
+                            {{ value }}
+                        </p>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="p-md-4 m-md-4" style="color: #fff; background-color: #161741">
+                        <div style="text-align: center; vertical-align: middle" colspan="1">
+                            <h5>Due to Some Error Logs are not Showing Up</h5>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="col text-center">
+                    <a href="#up" class="mt-4 btn btn-outline-primary"><i class="fa fa-arrow-up"></i> Go Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- Page Content Ends-->
+<a id="down"></a>
+
+<br /><br />
+
+<script>
+    $('table button i').click(function () {
+        if ($(this).hasClass('fa-angle-down')) {
+            $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-up');
+        } else {
+            $(this).removeClass('fa-angle-up');
+            $(this).addClass('fa-angle-down');
+        }
+    });
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+{% endblock %}

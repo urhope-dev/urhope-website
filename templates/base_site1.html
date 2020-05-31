@@ -17,6 +17,9 @@
     <link href="/static/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet">
     <link href="/static/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
+<!-- Include Quill stylesheet -->
+    <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+
     <!---JQuery----->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -53,10 +56,24 @@
 
 </head>
 
+{% if account_page %}
+<body style="background-color: #f5f9fe" class="landing-page">
+{% else %}
 <body class="landing-page">
+{% endif %}
 
 <!-- Navbar -->
+{% if account_page %}
+{% if session['role']=='v' %}
+{% include "partials/partials_volunteer_sidebar.html" %}
+{% elif session['role']=='n' %}
+{% include "partials/partials_ngo_sidebar.html" %}
+{% else %}
+{% include "partials/partials_admin_sidebar.html" %}
+{% endif %}
+{% else %}
 {% include "partials/partial_navbar.html" %}
+{% endif %}
 
 <!-- Header -->
 {% include "partials/partial_page_title.html" %}

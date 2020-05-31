@@ -27,7 +27,7 @@
               <span>Profile</span>
             </a>
 {% if session['role'] != 'a' %}
-            <a href="{{ url_for('task_list') }}" class="dropdown-item">
+            <a href="{{ url_for('home') }}" class="dropdown-item">
               <i class="ni ni-bullet-list-67"></i>
               <span>Tasks</span>
             </a> 
@@ -43,7 +43,7 @@
               <span>View Registered Volunteers</span>
             </a>
 
-            <a href="{{ url_for('task_list') }}" class="dropdown-item">
+            <a href="{{ url_for('home') }}" class="dropdown-item">
               <i class="ni ni-bullet-list-67"></i>
               <span>View tasks created by NGOs</span>
             </a>

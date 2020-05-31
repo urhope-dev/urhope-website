@@ -1,136 +1,337 @@
-{% extends "base_site.html" %}
-
-{% block title %} Profile {% endblock title %}
-
-{% block stylesheets %}
-  {{ super() }}
-{% endblock stylesheets %}
+{% extends "base_site1.html" %}
 
 {% block content %}
 
-    {% include "site_template/navigation.html" %}
-      
-    <!-- Header -->
-    <div class="header pb-3 pt-5 pt-lg-3 d-flex align-items-center" style=" background-size: cover; background-position: center top;">
-    <!-- Mask -->
-    <!-- Header container -->
-    </div>
-      
-    <!-- Page content -->
-
-            <div class="col-xl-8 order-xl-1 container-fluid">
-            <div class="card bg-secondary shadow">
-                <div class="card-header bg-white border-0">
-                <div class="row align-items-center">
-                    
-            {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-            {% if (message.startswith("Thanks")) %}
-            <div class="alert alert-success alert-dismissible" role="alert">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                  aria-hidden="true">×</span></button>
-              {{message}}
+<div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
+    <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
+        <div class="row align-items-center" align="center">
+            <div class="col">
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Edit Task</h1>
             </div>
-            {% else %}
-            <div class="alert alert-danger alert-dismissible" role="alert">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                  aria-hidden="true">×</span></button>
-              {{message}}
-            </div>
-            {% endif %}
-
-            {% endfor %} {% endif %} {% endwith %}
-                    <div class="col-8">
-                    <center><h3 class="mb-0 ml-6">Edit Task</h3></center>
-                    </div>
-                </div>
-                </div>
-                <div class="card-body">
-                <form action="{{ url_for('edit_task', id = data[0][0] )}}" method="POST">
-                    <div class="pl-lg-4">
-                    <div class="row">
-                        <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-control-label" for="input-username">Task Name</label>
-                            <input type="text" id="input-username" class="form-control form-control-alternative" 
-                                   value="{{ data[0][1] }}" name="task">
-                        </div>
-                        </div>
-                        <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-control-label" for="input-first-name">Name</label>
-                            <input name="grp" type="text" id="input-first-name" class="form-control form-control-alternative" name="grp" value="{{ session['name'] }}">
-                        </div>
-                        </div>
-                        
-                        <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-control-label" name="website" for="input-email">Website</label>
-                            <input name="website" type="text" id="input-email" class="form-control form-control-alternative" 
-                                    value="{{ session['website'] }}">
-                        </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-control-label" for="input-email">Task Type</label>
-                  <select class="form-control" name="t_type">
-                    <option disabled selected>---- Select Type of Task ----</option>
-                    <option value="Food">Food</option>
-                    <option value="Healthcare">Healthcare</option>
-                    <option value="Shelter">Shelter</option>
-                    <option value="Clothing">Clothing</option>
-                    <option value="Medical Equipments">Medical Equipments</option>
-                    <option value="Others">Others</option>
-                  </select>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-control-label" for="input-city">No. Of Volunteers</label>
-                                <input name="vol_num" type="text" id="input-city" class="form-control form-control-alternative" value="{{ data[0][7] }}">
-                            </div>
-                            </div>
-
-                        <div class="col-lg-4">
-                        <div class="form-group">
-                            <label class="form-control-label" for="input-city">Phone No</label>
-                            <input name="phone" type="text" id="input-city" class="form-control form-control-alternative"  value="{{ session['phone'] }}">
-                        </div>
-                        </div>
-                        <div class="col-lg-4">
-                        <div class="form-group">
-                            <label class="form-control-label" for="input-country">Pincode</label>
-                            <input name="pin" type="number" id="input-postal-code" class="form-control form-control-alternative"  value="{{ session['pin'] }}">
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <hr class="my-4" />
-                    <!-- Description -->
-                    <div class="pl-lg-4">
-                    <div class="form-group">
-                        <label>Task Detail</label>
-                        <textarea name="task_det" rows="4" class="form-control form-control-alternative" value="{{ data[0][8] }}" ></textarea>
-                    </div>
-                    </div>
-
-                        <div class="text-center">
-                            <button type="submit" name="create" class="btn btn-primary my-4">Edit Task</button>
-                          </div>
-                </form>
-                </div>
-            </div>
+            <div class="col justify-content-end d-none d-lg-block">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="/static/assets/img/theme/profile.png" class="profile-pic-dashboard" height="50">
+                    &nbsp;
+                    {{session['name']}}  &nbsp; <br>
+                    <span class="badge badge-secondary" style="background-color:#252766">Relief Provider</span>
+                </h6>
             </div>
         </div>
-    
-        {% include "site_template/footer.html" %}
-        
-    </div>    
+    </div>
+</div>
 
-{% endblock content %}
+<div class="container mb-lg-3 mt-lg-2 pl-lg-5 d-block d-lg-none">
+    <div class="row justify-content-center">
 
-{% block javascripts %}
-  {{ super()}}
-{% endblock javascripts %}
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='{{ url_for('home')}}'" style="cursor: pointer">
+                <div>
+                    <img src="/static/assets2/img/tasks.jpg" class="options-img" />
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-home"
+                        aria-hidden="true"></i><br>
+                    Dashboard
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='{{ url_for('logout')}}';" style="cursor: pointer">
+                <div>
+                    <img src="/static/assets2/img/logout.jpeg" class="options-img" />
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-sign-out"
+                        aria-hidden="true"></i><br>
+                    Logout
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-0 pl-lg-5">
+    <div class="row">
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+
+            <form action="{{ url_for('edit_task', id = data[0][0] )}}" method="POST">
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Task Details</h5>
+                    </div>
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Task Name</label>
+                            <input type="text" class="form-control" placeholder="Task Name" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="{{ data[0][1] }}" name="task">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Task Creator Name</label>
+                            <input type="text" class="form-control" placeholder="Task Creator Name"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" name="grp" value="{{ session['name'] }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">Website</label>
+                    <input name="website" type="text" class="form-control" placeholder="Website" aria-label="Username"
+                           aria-describedby="basic-addon1" value="{{ session['website'] }}">
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">No. of Volunteers required</label>
+                            <input name="vol_num" type="number" class="form-control" placeholder="No. of Volunteers required"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" value="{{ data[0][7] }}">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Task type</label>
+                            <select name="t_type" class="custom-select" id="inputGroupSelect03">
+                                <option selected>--- Task type ---</option>
+                                <option value="Food">Food</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Shelter">Shelter</option>
+                                <option value="Clothing" selected>Clothing</option>
+                                <option value="Medical Equipments">Medical Equipments</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Pincode</label>
+                            <input name="pin" type="number" class="form-control" placeholder="Pincode" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="{{ session['pin'] }}">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Phone No</label>
+                            <input name="phone" type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="{{ session['phone'] }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group my-3">
+                    <label for="exampleInputEmail1">Task Description</label>
+                    <textarea name="task_det" rows="5" class="form-control" aria-label="With textarea"
+                              placeholder="Write something about the task...">{{ data[0][8] }}
+                    </textarea>
+                </div>
+                <div style="text-align: center" class=" mb-3 ">
+                        <button type="submit" name="edit" class="btn btn-success" style="width: 100%">Update Task</button>
+                </div>
+            </div>
+            </form>
+        </div>
+
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">My Tasks</h5>
+                    </div>
+
+                    <table class="table step3-table filter-this-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <h6>Task</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Task Type</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Pincode</h6>
+                                </th>
+                                <th scope="col">
+                                    <h6>Apply</h6>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for k,data in myTask.items() %}
+                            {% for v in data %}
+                            <!--========== ROW 1 STARTS =========-->
+
+                            <tr aria-rowspan="2" class="card-row">
+                                <td class="align-middle">
+                                    <div class="initiative-heading">
+                                        <h6 class="font-weight-bold mb-0">{{v.task}}</h6>
+                                    </div>
+                                </td>
+                                <td class="align-middle">
+                                    <p class="m-0">{{v.t_type}}</p>
+                                </td>
+                                <td class="align-middle">
+                                    <p class="m-0">{{v.location}}</p>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
+                                        data-target="#collapseexploretask{{ v.task_id }}" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                                <td class="align-middle" hidden>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="sub-td">
+                                    <table class="collapse sub-table" id="collapseexploretask{{ v.task_id }}">
+                                        <tr>
+                                            <td colspan="1">
+                                                Task ID
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.task_id}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Posted
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.posted}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Task Details
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.task_det}}
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Task Creator
+                                            </td>
+                                            <td colspan="3">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.grp}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Volunteers required
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.vol_num}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Volunteers applied
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="initiative-description">
+                                                    <p class="text-muted" align="left">{{v.vol_applied}}</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" class="">
+                                                <p class="mt-1">Contact</p>
+                                            </td>
+                                            <td>
+                                                <div class="initiative-contact align-content-around">
+                                                    <a href="tel:{{v.phone}}">
+                                                        <button class="btn btn-sm btn-outline-primary mt-1">{{v.phone}}
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                Website
+                                            </td>
+                                            {% if "http" in v.website %}
+
+                                            <td colspan="3">
+                                                <a href="{{v.website}}">
+                                                    <button class="btn btn-sm btn-outline-primary mt-1">{{v.website}}
+                                                    </button>
+                                                </a>
+                                            </td>
+                                            {% else %}
+                                            <td colspan="3">
+                                                <a href="http://{{v.website}}">
+                                                    <button
+                                                        class="btn btn-sm btn-outline-primary mt-1">http://{{v.website}}
+                                                    </button>
+                                                </a>
+                                            </td>
+                                            {% endif %}
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                <p class="mt-1">Action</p>
+                                            </td>
+                                            <td colspan="3">
+                                                <div style="" class=" mb-2 ">
+                                                    <a href="{{ url_for('applied_vols', id=v.task_id)}}">
+                                                        <button class="btn btn-success mt-1">Applied Volunteers</button>
+                                                    </a>
+                                                    <a href="{{ url_for('edit_task', id=v.task_id)}}">
+                                                        <button class="btn btn-success mt-1">Edit Task</button>
+                                                    </a>
+                                                    <a href="{{ url_for('delete_task', id=v.task_id)}}">
+                                                        <button class="btn btn-danger mt-1" onclick="return confirm('Are you sure you want to delete this task?');">Delete Task</button>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            {% endfor %}
+                            <!--========== ROW 1 ENDS =========-->
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!---Page Content Ends--->
+
+<br/><br/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+    $('table button i').click(function () {
+        if ($(this).hasClass('fa-angle-down')) {
+            $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-up');
+        } else {
+            $(this).removeClass('fa-angle-up');
+            $(this).addClass('fa-angle-down');
+        }
+    });
+</script>
+
+{% endblock %}

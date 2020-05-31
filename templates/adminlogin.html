@@ -11,7 +11,7 @@
             <div class="card-custom mt-2 mt-lg-0 help-card">
           <div class=" text-center mt-2 mb-3">
           {% if "logged_in" in session %}
-          <h3> <div align="center">You are already Logged In.<br><a href="{{ url_for('logout') }}">Please Logout</a></div></div></div></h3>
+          <h3> <p>You are Already Logged In  <a href="{{ url_for('logout') }}" class=" btn btn-outline-danger" style="height: 30px; font-size: 12px;"> <b>Logout</b> </a></p></h3></div></div></div>
          {% else %}
          
                     <h3 class="font-weight-bold my-3" style="text-align: center">Administrator</h3>
