@@ -39,3 +39,10 @@ pip3 install -r requirements.txt
 python app.py
 ```
 Access the application on your local server.
+
+## Contributors
+
+<a href="https://github.com/zuhairabs"><img src="https://avatars2.githubusercontent.com/u/41848715?s=400&u=805cb4461a5eceedef7775ed8a007438bd83fd93&v=4" title="Zuhair" width="80" height="80"></a>
+<a href="https://github.com/jinojossy93"><img src="https://avatars3.githubusercontent.com/u/13327976?s=400&u=f3b9219b5fb7665d997ebf492bb890fde741201f&v=4" title="Jino" width="80" height="80"></a>
+<a href="https://github.com/sk-sharique"><img src="https://avatars0.githubusercontent.com/u/36589565?s=400&u=d7ade3c10f4bb6fa6a4af44e2c5b8d6d9976116b&v=4" title="Sharique" width="80" height="80"></a>
+<a href="https://github.com/thakurfurqaan"><img src="https://avatars1.githubusercontent.com/u/61093029?s=400&u=f174135fdd02ddc17539168b34f060c0edece6f0&v=4" title="Furqaan" width="80" height="80"></a>
