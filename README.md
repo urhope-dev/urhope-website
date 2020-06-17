@@ -15,14 +15,11 @@
 11. Pin based search for NGO for needy people
 12. Couldn't help section: Needy person can fill the form and nearby NGOs will receive the notifications on an email. If there are no nearby NGOs found then an email will be sent to URHope Team containing that person's information
 13. Admin Panel: Admin can monitor the whole website. He can view,delete NGOs, Volunteers, Tasks and can see active status of any user present on the website. He can see the logs and can decide about the behaviour of website and monitor the website efficiently
-
-
-**Tasks Remaining**
-1. Integration of Jino's work
-2. Releasing fully functional Version 1
-3. Start working to integrate new Frontend Designs
-4. Releasing fully functional Version 2
-5. Working to include new additional features
+14. Integration of Jino's work
+15. Releasing fully functional Version 1
+16. Start working to integrate new Frontend Designs
+17. Releasing fully functional Version 2
+18. Working to include new additional features
 
 
 # Running in Local
