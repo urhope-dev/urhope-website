@@ -2,6 +2,8 @@
 
 {% block content %}
 
+<center><a target="_blank" href="https://thakurfurqaan.github.io/URHopeSheet/"><button class="mt-4 btn btn-outline-success" style="width: 70%; font-size: 15px;">See All Data</button></a></center>
+
 <!-- Page Content -->
 <div class="container mt-2">
     <div class="row">
@@ -89,14 +91,13 @@
 {% endif %}
 {% if not 'logged_in' in session %}
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='/signup';" style="cursor: pointer">
+            <div class="options" onclick="location.href='/food/';" style="cursor: pointer">
                 <div>
-                    <img src="../static/assets2/img/NPO.jpeg" class="options-img"/>
+                    <img src="../static/assets2/img/foodbank.jpg" class="options-img"/>
                 </div>
-                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-handshake-o"
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-cutlery"
                                                   aria-hidden="true"></i><br>
-                    Are you an NGO/
-                    Relief Provider?
+                    Food Relief
                 </div>
             </div>
         </div>

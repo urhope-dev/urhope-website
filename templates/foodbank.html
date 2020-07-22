@@ -1,0 +1,27 @@
+{% extends "base_site1.html" %}
+
+{% block title %} Login {% endblock title %}
+
+{% block content %}
+
+<br>
+<!-- Page content -->
+<div class="container mt-0">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-12">
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+          <div class=" text-center mt-2 mb-3">
+                    <h3 class="font-weight-bold my-3" style="text-align: center">Food Relief</h3>
+                    <h4 class="my-3" style="text-align: center">Coming Soon</h4>
+          </div>
+{% if not 'logged_in' in session %}
+<p class="text-center">Go to Home&nbsp;&nbsp;<a href="{{ url_for('base') }}" class=" btn btn-outline-primary" style="height: 30px; font-size: 12px;"> <b>Home</b> </a></p>
+{% else %}
+<p class="text-center">Go to Home&nbsp;&nbsp;<a href="{{ url_for('home') }}" class=" btn btn-outline-primary" style="height: 30px; font-size: 12px;"> <b>Home</b> </a></p>
+{% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
