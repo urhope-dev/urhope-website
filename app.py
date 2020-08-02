@@ -82,9 +82,9 @@ def base():
 def relief():
     return render_template('relief_pincode_page.html')
 
-@app.route('/food/', methods=['GET','POST'])
-def foodbank():
-    return render_template('foodbank.html')
+# @app.route('/food/', methods=['GET','POST'])
+# def foodbank():
+#    return render_template('foodbank.html')
 
 @app.route('/relief_call/', methods=['GET'])
 def relief_call():
